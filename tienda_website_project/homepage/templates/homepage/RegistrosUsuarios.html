@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title >
+    <link rel="stylesheet" href="{% static 'css/registrarse.css' %}" type="text/css"> <!-- Enlace a tu hoja de estilos CSS si la tienes -->
+</head>
+<body>
+    <header>
+        <h1>Registrarse</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' % }"> Inicio</a></li>
+                <li><a href="{% url 'catalogo' %}">Catálogo</a></li>
+                <li><a href="{% url 'ofertas' %}">Ofertas</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href=" {% url 'login' %} ">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="registro-form">
+        <h2>Completa el formulario de registro</h2>
+        <form action="procesar_registro.php" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="/staticfiles/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/staticfiles/icons/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/people/MTA-El-Portal-De-La-Moda/100090363232444/?mibextid=ZbWKwL"><img src="/staticfiles/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/staticfiles/icons/ubicacion.png" alt="Ubicación"></a>
+            <a href="#"><img src="/staticfiles/icons/horario.png" alt="Horario"></a>
+            <a href="#"><img src="/staticfiles/icons/telefono.png" alt="Teléfono"></a>
+        </div>
+        <p>&copy; Eleven Store. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

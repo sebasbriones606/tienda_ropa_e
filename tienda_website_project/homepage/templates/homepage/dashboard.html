@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}" type="text/css" >
+    <title>Dashboard de Opciones</title>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' % }"> Inicio</a></li>
+                <li><a href="{% url 'catalogo' %}">Catálogo</a></li>
+                <li><a href="{% url 'ofertas' %}">Ofertas</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href=" {% url 'login' %} ">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="dashboard">
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+        <div class="option-box">
+            <a href="../html/index.html" class="option-link"><h2>Opción 1</h2></a>
+        </div>
+    </div>
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="/staticfiles/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/staticfiles/icons/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/people/MTA-El-Portal-De-La-Moda/100090363232444/?mibextid=ZbWKwL"><img src="/staticfiles/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/staticfiles/icons/ubicacion.png" alt="Ubicación"></a>
+            <a href="#"><img src="/staticfiles/icons/horario.png" alt="Horario"></a>
+            <a href="#"><img src="/staticfiles/icons/telefono.png" alt="Teléfono"></a>
+        </div>
+        <p>&copy; Eleven Store. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

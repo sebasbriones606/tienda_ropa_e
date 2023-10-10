@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #1b5583;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Estilos para la sección de carrito */
+.carrito {
+    position: relative; /* Agregamos posición relativa para posicionar el borde */
+    background-color: white; /* Fondo blanco */
+    padding: 20px;
+    margin: 20px auto; /* Centra el carrito horizontalmente */
+    max-width: 800px;
+    border: 2px solid #1b5583; /* Borde azul */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.carrito h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column; /* Cambia la disposición de los elementos */
+    align-items: center; /* Centra horizontalmente */
+    margin: 20px 0;
+}
+
+.producto img {
+    max-width: 150px; /* Aumenta el tamaño de la imagen */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Agrega espacio entre la imagen y el contenido */
+}
+
+.producto .info {
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.producto h3 {
+    font-size: 20px; /* Aumenta el tamaño del título */
+    margin: 10px 0; /* Agrega un poco de margen arriba y abajo */
+}
+
+.producto p {
+    margin: 0;
+}
+
+.producto label {
+    display: block;
+    margin-top: 10px;
+}
+
+.producto input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.producto .eliminar,
+.producto .agregar {
+    background-color: #1b5583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.producto .eliminar:hover {
+    background-color: #e64312;
+}
+.producto .agregar:hover {
+    background-color: #8ac211;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.subtotal button {
+    background-color: #1b5583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subtotal button:hover {
+    background-color: #000;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1b5583;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Redes sociales en el pie de página */
+.redes-sociales a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Imágenes de redes sociales */
+.redes-sociales img {
+    max-width: 30px;
+    vertical-align: middle;
+}
+
+/* Añade más estilos según sea necesario */

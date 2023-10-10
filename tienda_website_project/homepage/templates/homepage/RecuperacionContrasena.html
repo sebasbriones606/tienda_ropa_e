@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="{% static 'css/recuperacion_contraseña.css' %}"> <!-- Enlaza tu hoja de estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Recuperación de Contraseña</h1>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/productos.html">Catálogo</a></li>
+                <li><a href="../html/ofertas.html">Ofertas</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+                <li><a href="../html/login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="recovery-form">
+        <h2>¿Olvidaste tu contraseña?</h2>
+        <p>Por favor, ingresa tu dirección de correo electrónico y te enviaremos instrucciones para recuperar tu cuenta.</p>
+        <form action="procesar_recuperacion.php" method="post">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar Instrucciones</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="/staticfiles/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/staticfiles/icons/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/people/MTA-El-Portal-De-La-Moda/100090363232444/?mibextid=ZbWKwL"><img src="/staticfiles/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/staticfiles/icons/ubicacion.png" alt="Ubicación"></a>
+            <a href="#"><img src="/staticfiles/icons/horario.png" alt="Horario"></a>
+            <a href="#"><img src="/staticfiles/icons/telefono.png" alt="Teléfono"></a>
+        </div>
+        <p>&copy; Eleven Store. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

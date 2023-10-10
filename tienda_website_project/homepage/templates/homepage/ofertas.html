@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa en Línea</title>
+    <link rel="stylesheet" href="{% static 'css/ofertas.css' %}" type="text/css"> <!-- Enlace a tu hoja de estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Ofertas</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' % }"> Inicio</a></li>
+                <li><a href="{% url 'catalogo' %}">Catálogo</a></li>
+                <li><a href="{% url 'ofertas' %}">Ofertas</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href=" {% url 'login' %} ">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="ofertas">
+        <h2>Nuestras Ofertas Especiales</h2>
+        <!-- Aquí puedes listar productos en oferta -->
+
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="/staticfiles/images/Polo 1.jpg"alt="Oferta 1" class="imgProducto">
+            <h3>Producto en Oferta 1</h3>
+            <p>Descripción del producto en oferta 1.</p>
+            <p class="precio-oferta">Precio: Q50.00</p>
+            <p class="precio-original">Precio Original: Q80.00</p>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="/staticfiles/images/Polo 2.jpg" alt="Oferta 2" class="imgProducto">
+            <h3>Producto en Oferta 2</h3>
+            <p>Descripción del producto en oferta 2.</p>
+            <p class="precio-oferta">Precio: Q40.00</p>
+            <p class="precio-original">Precio Original: Q60.00</p>
+        </div>
+
+        <!-- Agrega más productos en oferta según sea necesario -->
+
+    </section>
+
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><img src="/staticfiles/icons/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/staticfiles/icons/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.facebook.com/people/MTA-El-Portal-De-La-Moda/100090363232444/?mibextid=ZbWKwL"><img src="/staticfiles/icons/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/staticfiles/icons/ubicacion.png" alt="Ubicación"></a>
+            <a href="#"><img src="/staticfiles/icons/horario.png" alt="Horario"></a>
+            <a href="#"><img src="/staticfiles/icons/telefono.png" alt="Teléfono"></a>
+        </div>
+        <p>&copy; Eleven Store. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
