@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static 'css/productos.css' %}" rel="stylesheet" type="text/css">
-    <title>Carrito de compras</title>
+    <title>Catalogo de productos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
 </head>
 
 <body>
-    <header id="header">
-        <h1>Eleven Store</h1>
+    <header>
+        <h1>Catalogo de Productos</h1>
         <nav>
             <ul>
                 <li><a href="{% url 'home' % }"> Inicio</a></li>
@@ -33,172 +33,255 @@
             </ul>
         </nav>
     </header>
-    
+
     <div id="contenedor" class="contenedor">
+
+        <!-- Producto 1-->
         <div>
-            <img src="/staticfiles/images/Chumpa Gris.jpg" alt="producto 1">
+            <img src="/staticfiles/images/Chumpa Gris.jpg" alt="producto 1" class="imgProducto">
             <div class="informacion">
                 <p>Producto 1</p>
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.200.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 2-->
         <div>
-            <img src="/staticfiles/images/Chumpa Negra.jpg" alt="producto 2">
+            <img src="/staticfiles/images/Chumpa Negra.jpg" alt="producto 2" class="imgProducto">
             <div class="informacion">
                 <p>Producto 2</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.200.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 3-->
         <div>
-            <img src="/staticfiles/images/gorra.jpg" alt="producto 3">
+            <img src="/staticfiles/images/gorra.jpg" alt="producto 3" class="imgProducto">
             <div class="informacion">
                 <p>Producto 3</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.75.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 4-->
         <div>
-            <img src="/staticfiles/images/Gorras.jpg" alt="producto 4">
+            <img src="/staticfiles/images/Gorras.jpg" alt="producto 4" class="imgProducto">
             <div class="informacion">
                 <p>Producto 4</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.70.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 5-->
         <div>
-            <img src="/staticfiles/images/Paltalon de lona 2.jpg" alt="producto 5">
+            <img src="/staticfiles/images/Paltalon de lona 2.jpg" alt="producto 5" class="imgProducto">
             <div class="informacion">
                 <p>Producto 5</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.180.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 6-->
         <div>
-            <img src="/staticfiles/images/Paltalon de lona.jpg" alt="producto 6">
+            <img src="/staticfiles/images/Paltalon de lona.jpg" alt="producto 6" class="imgProducto">
             <div class="informacion">
                 <p>Producto 6</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.180.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 7-->
         <div>
-            <img src="/staticfiles/images/Paltalon negro.jpg" alt="producto 7">
+            <img src="/staticfiles/images/Paltalon negro.jpg" alt="producto 7" class="imgProducto">
             <div class="informacion">
                 <p>Producto 7</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.180.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 8-->
         <div>
-            <img src="/staticfiles/images/Polo 1.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Polo 1.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.150.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 9-->
         <div>
-            <img src="/staticfiles/images/Polo 2.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Polo 2.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.150.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 10-->
         <div>
-            <img src="/staticfiles/images/Polo 3.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Polo 3.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.150.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 11-->
         <div>
-            <img src="/staticfiles/images/Sueter celeste.jpg" alt="producto 8">
-            <div class="informacion">
-                <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/staticfiles/images/sueter verde.jpg" alt="producto 8">
-            <div class="informacion">
-                <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/staticfiles/images/Chumpa nueva.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Sueter celeste.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
                 <p class="precio">Q.199.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 12-->
         <div>
-            <img src="/staticfiles/images/Maniki 1.jpg" alt="producto 8">
+            <img src="/staticfiles/images/sueter verde.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
                 <p class="precio">Q.199.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 13-->
         <div>
-            <img src="/staticfiles/images/Maniki 2.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Chumpa nueva.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
                 <p class="precio">Q.199.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 14-->
         <div>
-            <img src="/staticfiles/images/Maniki 3.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Maniki 1.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.130.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 15-->
+        <div>
+            <img src="/staticfiles/images/Maniki 2.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.130.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 16-->
+        <div>
+            <img src="/staticfiles/images/Maniki 3.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.130.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 17-->
+        <div>
+            <img src="/staticfiles/images/Maniki 4.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.130.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 18-->
+        <div>
+            <img src="/staticfiles/images/Maniki 5.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.130.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 19-->
+        <div>
+            <img src="/staticfiles/images/Pants.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.150.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 20-->
+        <div>
+            <img src="/staticfiles/images/Zapatos.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.180.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 21-->
+        <div>
+            <img src="/staticfiles/images/Zapatos 2.jpg" alt="producto 8" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 8</p>                   
+                <p class="precio">Q.190.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 22-->
+        <div>
+            <img src="/staticfiles/images/Chumpa_Zero.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
                 <p class="precio">Q.199.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 23-->
         <div>
-            <img src="/staticfiles/images/Maniki 4.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Chumpa_Zero_2.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
                 <p class="precio">Q.199.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 24-->
         <div>
-            <img src="/staticfiles/images/Maniki 5.jpg" alt="producto 8">
-            <div class="informacion">
-                <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
-                <button>Comprar</button>
-            </div>
-        </div><div>
-            <img src="/staticfiles/images/Pants.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Chumpa_Zero_3.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
                 <p class="precio">Q.199.00</p>
                 <button>Comprar</button>
             </div>
         </div>
+
+        <!-- Producto 25-->
         <div>
-            <img src="/staticfiles/images/Zapatos.jpg" alt="producto 8">
+            <img src="/staticfiles/images/Falda.jpg" alt="producto 8" class="imgProducto">
             <div class="informacion">
                 <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-        <div>
-            <img src="/staticfiles/images/Zapatos 2.jpg" alt="producto 8">
-            <div class="informacion">
-                <p>Producto 8</p>                   
-                <p class="precio">Q.199.00</p>
+                <p class="precio">Q.120.00</p>
                 <button>Comprar</button>
             </div>
         </div>
@@ -214,9 +297,8 @@
             <a href="#"><img src="/staticfiles/icons/telefono.png" alt="Teléfono"></a>
         </div>
         <p>&copy; Eleven Store. Todos los derechos reservados.</p>
-	</footer>
+    </footer>
 
-    <script src="app.js"></script>
 </body>
 
 </html>
