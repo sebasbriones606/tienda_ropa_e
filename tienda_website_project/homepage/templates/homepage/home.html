@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa en Línea</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"> <!-- Enlace a tu hoja de estilos CSS -->
-    
-
+    <link rel="stylesheet" href="{% static 'css/main.css' %}"> <!-- Enlace a tu hoja de estilos CSS -->
 </head>
 <body>
     <header>
-        <h1>Eleven Store</h1>
+        <h1>El Portal de la Moda</h1>
         <nav>
             <ul>
                 <li><a href="{% url 'home' % }"> Inicio</a></li>
@@ -28,37 +26,93 @@
 
         <!-- Producto 1-->
         <div>
-            <img src="/staticfiles/images/Chumpa Gris.jpg" alt="producto 1" class="imgProducto">
+            <img src="../img/Chumpa Gris.jpg" alt="producto 1" class="imgProducto">
             <div class="informacion">
                 <p>Producto 1</p>
                 <P>Descripción </P>
                 <p class="precio">Q.200.00</p>
-                <button>Comprar</button>
+                <a href="../html/carrito_compras.html">
+                    <button>Comprar</button>
+                </a>
             </div>
         </div>
 
         <!-- Producto 1-->
         <div>
-            <img src="/staticfiles/images/Chumpa Gris.jpg" alt="producto 1" class="imgProducto">
+            <img src="../img/Chumpa_Zero_3.jpg" alt="producto 1" class="imgProducto">
             <div class="informacion">
                 <p>Producto 1</p>
                 <p>Descripción</p>
                 <p class="precio">Q.200.00</p>
-                <button>Comprar</button>
+                <a href="../html/carrito_compras.html">
+                    <button>Comprar</button>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="catalogo">
         <h2>Catálogo de Ropa</h2>
-        <!-- Aquí puedes listar productos en diferentes categorías -->
+
+        <!-- Producto 1-->
+        <div>
+            <img src="../img/Pants.jpg" alt="producto 1" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 1</p>
+                <P>Descripción </P>
+                <p class="precio">Q.200.00</p>
+                <a href="../html/carrito_compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Producto 2-->
+        <div>
+            <img src="../img/Paltalon de lona 2.jpg" alt="producto 1" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 1</p>
+                <p>Descripción</p>
+                <p class="precio">Q.200.00</p>
+                <a href="../html/carrito_compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+
     </section>
 
     <section class="ofertas">
         <h2>Ofertas Especiales</h2>
-        <!-- Aquí puedes mostrar productos en oferta -->
-    </section>
+        
+        <!-- Producto 1-->
+        <div>
+            <img src="../img/Polo 1.jpg" alt="producto 1" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 1</p>
+                <p>Descripción</p>
+                <p class="precio">Q.200.00</p>
+                <a href="../html/carrito_compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
 
+        <!-- Producto 2-->
+        <div>
+            <img src="../img/Paltalon negro.jpg" alt="producto 1" class="imgProducto">
+            <div class="informacion">
+                <p>Producto 1</p>
+                <p>Descripción</p>
+                <p class="precio">Q.200.00</p>
+                <a href="../html/carrito_compras.html">
+                    <button>Comprar</button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    
     <footer>
         <div class="redes-sociales">
             <a href="#"><img src="/staticfiles/icons/instagram.png" alt="Instagram"></a>
@@ -68,7 +122,7 @@
             <a href="#"><img src="/staticfiles/icons/horario.png" alt="Horario"></a>
             <a href="#"><img src="/staticfiles/icons/telefono.png" alt="Teléfono"></a>
         </div>
-        <p>&copy; Eleven Store. Todos los derechos reservados.</p>
+        <p>&copy; El portal de la moda. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

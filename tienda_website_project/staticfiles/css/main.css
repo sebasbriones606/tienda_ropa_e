@@ -121,6 +121,132 @@ button:hover {
     background-color: #ffd700;
 }
 
+/* Estilo para la clase Catalogo */
+
+/* Estilos para la sección de catálogo */
+.catalogo {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para la sección de catálogo */
+.catalogo {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para cada producto en el catálogo */
+.catalogo div {
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px; /* Ancho de cada producto */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.catalogo .imgProducto {
+    max-width: 100%;
+    height: auto;
+}
+
+.catalogo .informacion {
+    text-align: left;
+}
+
+.catalogo p {
+    margin: 5px 0;
+}
+
+.catalogo .precio {
+    font-weight: bold;
+    color: #1b5583;
+}
+
+.catalogo button {
+    background-color: #1b5583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.catalogo button:hover {
+    background-color: #ffd700;
+}
+
+/* Estilos para la clase Ofertas*/
+/* Estilos para la sección de ofertas */
+.ofertas {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+}
+
+.ofertas h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para cada producto en ofertas */
+.ofertas div {
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px; /* Ancho de cada producto */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.ofertas .imgProducto {
+    max-width: 100%;
+    height: auto;
+}
+
+.ofertas .informacion {
+    text-align: left;
+}
+
+.ofertas p {
+    margin: 5px 0;
+}
+
+.ofertas .precio {
+    font-weight: bold;
+    color: #1b5583;
+}
+
+.ofertas button {
+    background-color: #1b5583;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.ofertas button:hover {
+    background-color: #ffd700;
+}
 
 /* Pie de página */
 footer {
@@ -142,4 +268,3 @@ footer {
     vertical-align: middle;
 }
 
-/* Añade más estilos según sea necesario */
