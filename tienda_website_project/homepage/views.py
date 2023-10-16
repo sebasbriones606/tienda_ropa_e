@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, get_object_or_404
+from .models import Product
 
 # Create your views here.
 
@@ -53,4 +55,9 @@ def ofertas(request):
     return render(request, 'homepage\ofertas.html')
 
 def VentasRealizadas(request): 
-    return render(request, 'homepage\VentasRealizadas.html')     
+    return render(request, 'homepage\VentasRealizadas.html')   
+
+def product_detail(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    return render(request, 'homepage\productoDetalle.html', {'product': product})  
+   
